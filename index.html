@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body , html{
+            overflow-x :hidden ;
+
+        }
+        .navbar{
+            width: 100%;
+           position: sticky;
+           top: 0px;
+           left: 0px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(94, 94, 94);
+            color: white;
+        }
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+
+           
+        }
+        .navbar ul li {
+            margin: 8px 5px;
+            padding: 8px 20px;
+        }
+        li:hover{
+            background-color:white;
+            color: black;
+            border-radius: 20px;
+        }
+        header{
+            width: 100vw;
+            height: 100vh;
+            background-image: url("home-bg-1.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+            color: green;
+            text-align: center;
+
+        }
+        header h2{
+            font-size: 4vmin;
+            
+        }
+        header h1{
+            font-size: 6vmin;
+
+        }
+      section h3{
+          
+          text-align: center;
+          margin: 50px;
+          font-size: 4vmin;
+      }
+      section .row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+         
+      }
+      .col{
+          display: flex;
+          flex-direction: column;
+          width: 20%;
+          margin: 20px;
+          align-items: center;
+      }
+      .col img{
+          border-radius: 400px;
+          width: 200px;
+          height: 200px;
+      }
+      .col a{
+          padding: 8px 20px;
+          margin: 20px 0px;
+          border: 2px solid green;
+          border-radius: 10px ;
+      }
+    @media only screen and (max-width:850px) {
+        .col{
+            width: 90%;
+        }
+         
+     }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ADVENTURE</div>
+        <UL>
+            <li>home</li>
+            <li>contact</li>
+            <li>about</li>
+        </UL>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>EXPLORE THE WORLD</h2>
+            <div class="line"></div>
+            <h1>A WONDERFULL GIFT</h1>
+        </div>
+    </header>
+
+
+
+    <section>
+        <h3>Advanture idea</h3>
+        <div class="row">
+        <div class="col">
+            <img src="category-1.jpg" alt="">
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, hic.</p>
+            <a href="#">learn more</a>
+        </div>
+        <div class="col">
+            <img src="category-2.jpg" alt="">
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, hic.</p>
+            <a href="#">learn more</a>
+        </div>
+        <div class="col">
+            <img src="category-3.jpg" alt="">
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, hic.</p>
+            <a href="#">learn more</a>
+        </div>
+        <div class="col">
+            <img src="category-4.jpg" alt="">
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, hic.</p>
+            <a href="#">learn more</a>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
